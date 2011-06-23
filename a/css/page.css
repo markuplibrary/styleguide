@@ -1,0 +1,63 @@
+/*
+-----------------------------------------------
+Semantic Page Divisions
+-----------------------------------------------
+Site Name
+file:		css/page.css
+author:		Stephen Bau
+date:		20 June 2011
+----------------------------------------------- */
+
+
+/* content classes
+----------------------------------------------- */
+.content {
+	margin: 0;
+	padding: 15px;
+}
+.block {
+	padding: 25px;
+	background: #ddd;
+}
+.unit {
+	padding: 15px;
+	background: #eee;
+}
+
+
+/* content spacing
+----------------------------------------------- */
+.content p:last-child,
+.block p:last-child,
+.unit p:last-child {
+	margin-bottom: 0;
+}
+
+
+/* clearing
+----------------------------------------------- */
+.content:after,
+.block:after,
+.unit:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.content,
+.block,
+.unit {
+	zoom: 1;
+	display: block;
+}
+
+
+/* debug
+----------------------------------------------- */
+.debug {
+	border: 1px solid #f00;
+	margin: -1px;
+	position: relative;
+	z-index: 100;
+}

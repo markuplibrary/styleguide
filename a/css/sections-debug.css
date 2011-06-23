@@ -1,0 +1,66 @@
+/*
+-----------------------------------------------
+Grids: Sections CSS - Debug
+----------------------------------------------- */
+
+/* colors
+-----------------------------------------------
+This section has been commented out to display
+colors only on hover. Uncomment this section
+and comment out the next section to display
+colors by default and black on hover.
+----------------------------------------------- */
+.debug .content p {
+	background: #f7941d;
+	color: #fff;
+}
+.debug .fragment p {
+	background: #8dc63f;
+}
+.debug .simple p {
+	background: #00aef0;
+}
+.debug .compound p {
+	background: #92278f;
+}
+.debug .complex p {
+	background: #ec008c;
+}
+.debug .compound-complex p {
+	background: #f00;
+}
+
+
+/* hover colors
+----------------------------------------------- */
+.debug .content:hover,
+.debug .subsection:hover {
+	background: #eee;
+}
+.debug .content:hover p,
+.debug .subsection:hover p {
+	background: #000;
+}
+
+
+/* spacing
+----------------------------------------------- */
+.debug .content p {
+	padding: 10px 15px;
+	margin: 0;
+}
+
+
+/* effects (rounded corners)
+----------------------------------------------- */
+.debug .content,
+.debug .subsection {
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+}
+.debug .content p {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}

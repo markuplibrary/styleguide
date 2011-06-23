@@ -1,0 +1,246 @@
+/*
+==================================================
+Markup Library
+==================================================
+file:     forms.css
+version:  1.0
+date:     22 June 2011
+author:   Stephen Bau
+site:     Markup Library
+url:      markuplibrary.org
+--------------------------------------------------
+
+
+--------------------------------------------------
+Table of Contents
+--------------------------------------------------
+
+
+      FORMS STYLES
+      --------------------------------------------
+
+         1  FORMS
+             1.1  Fieldsets
+             1.2  Legends
+             1.3  Form List Items
+             1.4  Fluid Width Inputs
+             1.5  Fixed Width Inputs
+             1.6  Default Width Inputs
+             1.7  Input Labels
+             1.8  Date & Time Fields
+         2  FLASHES
+             2.1  Flash Messages
+             2.2  Colours
+             2.3  Icons
+
+
+--------------------------------------------------
+*/
+
+
+
+
+
+/*
+==================================================
+
+1  FORMS
+
+==================================================
+*/
+
+/*
+--------------------------------------------------
+1.1  Fieldsets
+-------------------------------------------------- */
+form fieldset {
+  margin-bottom: 1em;
+}
+
+/*
+--------------------------------------------------
+1.2  Legends
+-------------------------------------------------- */
+form fieldset ol li legend {
+  font-weight: bold;
+}
+
+/*
+--------------------------------------------------
+1.3  Form List Items
+-------------------------------------------------- */
+form ol {
+  margin-bottom: 0;
+}
+form ol li,
+form ol li ol li {
+  list-style: none;
+  margin-left: 0;
+}
+form ol li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+form ol li ol li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+--------------------------------------------------
+1.4  Fluid Width Inputs
+-------------------------------------------------- */
+form fieldset ol li.date input,
+form fieldset ol li.file input,
+form fieldset ol li.numeric input,
+form fieldset ol li.password input,
+form fieldset ol li.select select,
+form fieldset ol li.string input,
+form fieldset ol li.text textarea {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  width: 100%;
+  margin-top: .3em;
+}
+
+/*
+--------------------------------------------------
+1.5  Fixed Width Inputs
+-------------------------------------------------- */
+form.fixed fieldset ol li.date input,
+form.fixed fieldset ol li.file input,
+form.fixed fieldset ol li.numeric input,
+form.fixed fieldset ol li.password input,
+form.fixed fieldset ol li.select select,
+form.fixed fieldset ol li.string input,
+form.fixed fieldset ol li.text textarea {
+  width: 300px;
+}
+
+/*
+--------------------------------------------------
+1.6  Default Width Inputs
+-------------------------------------------------- */
+form.default fieldset ol li.date input,
+form.default fieldset ol li.file input,
+form.default fieldset ol li.numeric input,
+form.default fieldset ol li.password input,
+form.default fieldset ol li.select select,
+form.default fieldset ol li.string input,
+form.default fieldset ol li.text textarea {
+  width: auto;
+}
+
+/*
+--------------------------------------------------
+1.7  Input Labels
+-------------------------------------------------- */
+form fieldset ol li label {
+  display: block;
+  font-weight: bold;
+}
+form fieldset ol li ol li label {
+  font-weight: normal;
+}
+
+/*
+--------------------------------------------------
+1.8  Date & Time Fields
+-------------------------------------------------- */
+form fieldset ol li.date fieldset ol li,
+form fieldset ol li.time fieldset ol li,
+form fieldset ol li.datetime fieldset ol li {
+  float: left;
+  width: auto;
+  margin: 0 .3em 0 0;
+  padding: 0;
+}
+form fieldset ol li.date fieldset ol li label,
+form fieldset ol li.time fieldset ol li label,
+form fieldset ol li.datetime fieldset ol li lable {
+  font-weight: normal;
+  margin-top: 0;
+}
+
+
+
+
+/*
+==================================================
+
+2  FLASHES
+
+==================================================
+*/
+
+/*
+--------------------------------------------------
+2.1  Flash Messages
+-------------------------------------------------- */
+#flashes {
+  margin-bottom: 20px;
+}
+#flashes div,
+#flashes p,
+#flashes li {
+  padding:.5em 1em .5em 30px;
+  margin-bottom: 1px;
+}
+#flashes li {
+  margin-left: 0;
+  list-style: none;
+}
+
+
+/*
+--------------------------------------------------
+2.2  Colours
+-------------------------------------------------- */
+#flashes p {
+  color: #666;
+}
+#flashes .notice {
+  background-color: #b8d2df;
+}
+#flashes .success {
+  background-color: #ceef9b;
+}
+#flashes .pending {
+  background-color: #efe38f;
+}
+#flashes .alert {
+  background-color: #efcb92;
+}
+#flashes .error {
+  background-color: #f2b3ab;
+}
+
+
+/*
+--------------------------------------------------
+2.3  Icons
+-------------------------------------------------- */
+#flashes div,
+#flashes p,
+#flashes li {
+  background-repeat: no-repeat;
+  background-position: 8px 6px;
+}
+#flashes .notice {
+  background-image: url("../img/status/information.png");
+}
+#flashes .success {
+  background-image: url("../img/status/tick.png");
+}
+#flashes .pending {
+  background-image: url("../img/status/lock.png");
+}
+#flashes .alert {
+  background-image: url("../img/status/error.png");
+}
+#flashes .error {
+  background-image: url("../img/status/cross.png");
+}
+
+

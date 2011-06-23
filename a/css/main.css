@@ -1,0 +1,2085 @@
+/*
+==================================================
+Markup Library
+==================================================
+file:     main.css
+version:  1.0
+date:     22 June 2011
+author:   Stephen Bau
+site:     Markup Library
+url:      markuplibrary.org
+--------------------------------------------------
+
+
+--------------------------------------------------
+Table of Contents
+--------------------------------------------------
+
+
+      LIBRARIES
+      --------------------------------------------
+
+         A  CSS RESET
+
+
+      MAIN STYLES
+      --------------------------------------------
+
+         1  ELEMENTS
+             1.1  Root Element
+             1.2  Text-Level Semantics
+                   1.2.1  Anchors
+                   1.2.2  Modifiers
+             1.3  Grouping Content
+             1.4  Forms
+             1.5  Document Sections
+             1.6  Tabular Data
+             1.7  Embedding Content
+             1.8  Interactive Elements
+         2  TYPOGRAPHY
+             2.1  Fonts
+             2.2  Headings
+             2.3  Anchors
+             2.4  Lists
+                   2.4.1  List Classes
+             2.5  Tables
+         3  GRIDS
+             3.1  OOCSS Grids
+         4  LAYOUT
+             4.1  Default Page Structure
+             4.2  Clear Fix
+         5  CONTENT
+             5.1  Images
+             5.2  Navigation
+                   5.2.1  Horizontal Navigation
+                   5.2.2  Vertical Subnavigation
+                   5.2.3  Clearing
+             5.3  Menus
+                   5.3.1  Menus and Lists
+                   5.3.2  Main Menu
+                   5.3.3  List Menu
+                   5.3.4  Menu Buttons
+                   5.3.5  Status Menu
+             5.4  Table of Contents
+             5.5  Swatches
+             5.6  OOCSS Modules
+                   5.6.1  Module Classes
+                   5.6.2  Notice Module
+             5.7  Forms
+                   5.7.1  Resources Form
+             5.8  System Messages
+             5.9  Files
+             5.10 Site Information
+         6  COLORS
+             6.1  Anchors
+         7  BRANDING
+             7.1  Logo
+         8  EFFECTS
+             8.1  Box Shadows
+             8.2  Syntax Highlighter Overrides
+         9  MEDIA QUERIES
+             9.1  Large Screens
+             9.2  Medium Screens
+             9.3  Small Screens
+             9.4  Narrow Screens
+
+
+--------------------------------------------------
+*/
+
+
+
+
+
+/*
+==================================================
+
+A  CSS RESET
+
+==================================================
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*
+==================================================
+
+1  ELEMENTS
+
+==================================================
+*/
+
+/*
+http://joshduck.com/periodic-table.html
+*/
+
+
+/*
+--------------------------------------------------
+1.1  Root Element
+-------------------------------------------------- */
+
+
+/*
+--------------------------------------------------
+1.2  Text-Level Semantics
+-------------------------------------------------- */
+
+
+/* 1.2.1  Anchors
+-------------------------------------------------- */
+a {
+	text-decoration: none;
+}
+
+
+/* 1.2.2  Modifiers
+-------------------------------------------------- */
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+
+
+/*
+--------------------------------------------------
+1.3  Grouping Content
+-------------------------------------------------- */
+p,
+dl,
+hr,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+	margin-bottom: 20px;
+}
+hr
+{
+	border-color: #ddd;
+	border-style: solid;
+	border-width: 1px 0 0;
+	height: 0;
+}
+
+
+/*
+--------------------------------------------------
+1.4  Forms
+-------------------------------------------------- */
+input.button {
+	border: none;
+	cursor: pointer;
+	padding: 0 1em .2em 1em;
+	height: 2em;
+	font-size: 1em;
+	line-height: 2em;
+}
+
+
+/*
+--------------------------------------------------
+1.5  Document Sections
+-------------------------------------------------- */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+/*
+--------------------------------------------------
+1.6  Tabular Data
+-------------------------------------------------- */
+table {
+	width: 100%;
+}
+th,
+td {
+	padding: .5em 1em;
+	background: #eee;
+	color: #666;
+	border: 1px solid #fff;
+	text-align: left;
+}
+td {
+	vertical-align: top;
+}
+th {
+	background: #ddd;
+	color: #444;
+	font-weight: bold;
+}
+
+
+/*
+--------------------------------------------------
+1.7  Embedding Content
+-------------------------------------------------- */
+
+
+/* 1.7.1  Images
+-------------------------------------------------- */
+img {
+	border: none;
+	display: block;
+}
+
+
+/*
+--------------------------------------------------
+1.8  Interactive Elements
+-------------------------------------------------- */
+
+
+
+/*
+==================================================
+
+2  TYPOGRAPHY
+
+==================================================
+*/
+
+
+/*
+--------------------------------------------------
+2.1  Fonts
+-------------------------------------------------- */
+body {
+	font: normal 75%/1.5em helvetica, arial, sans-serif;
+	color: #666;
+}
+
+
+/*
+--------------------------------------------------
+2.2  Headings
+-------------------------------------------------- */
+h1 {font-size: 2.6em;}
+h2 {font-size: 2.2em;}
+h3 {font-size: 1.8em;}
+h4 {font-size: 1.6em;}
+h5 {font-size: 1.4em;}
+h6 {font-size: 1.2em;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin-bottom: .5em;
+	line-height: 1.2em;
+	color: #000;
+}
+
+
+/*
+--------------------------------------------------
+2.3  Anchors
+-------------------------------------------------- */
+a.button.add {
+	float: right;
+	background: #eee;
+	width: 30px;
+	height: 30px;
+	margin-top: -4px;
+	font-weight: bold;
+	line-height: 28px;
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+a.button.add:hover {
+	color: #fff;
+	background: #2a8cc8;
+}
+
+/*
+--------------------------------------------------
+2.4  Lists
+-------------------------------------------------- */
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style: square;
+}
+
+li {
+	margin-left: 24px;
+}
+ul li {
+	list-style-type: disc;
+}
+ol li {
+	list-style-type: decimal;
+}
+ol li ol li {
+	list-style-type: lower-alpha;
+}
+ul li li {
+	list-style-type: circle;
+}
+ul ul,
+ol ul,
+ol ol {
+	margin-bottom: 0;
+}
+ol ul li {
+	list-style-type: disc;
+}
+ol ul li li {
+	list-style-type: circle;
+}
+
+
+/* 2.4.1  List Classes
+-------------------------------------------------- */
+ul.item-list li {
+	margin-left: 24px;
+	list-style-image: url(../img/meta/post.gif);
+}
+ul.categories-list li {
+	margin-left: 24px;
+	list-style-image: url(../img/meta/category.gif);
+}
+
+
+/*
+--------------------------------------------------
+2.5  Tables
+-------------------------------------------------- */
+
+
+/*
+--------------------------------------------------
+2.6  Miscellaneous
+-------------------------------------------------- */
+
+
+/* 2.6.1  Blockquotes
+-------------------------------------------------- */
+blockquote {
+	border-left: 5px solid #ddd;
+	background-color: #eee;
+	padding: .5em .5em;
+	margin-bottom: 1em;
+}
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+
+/* 2.6.1  Code
+-------------------------------------------------- */
+pre {
+	white-space: normal;
+	padding: 1em 1.5em;
+	border: 1px solid #ddd;
+	background-color: #eee;
+	word-wrap: break-word;
+}
+code {
+	white-space: pre;
+	font-size: 1.2em;
+	color: #000;
+}
+
+
+
+
+/*
+==================================================
+
+3  GRIDS
+
+==================================================
+*/
+
+
+/*
+--------------------------------------------------
+3.1  OOCSS Grids
+-------------------------------------------------- */
+
+/*
+https://github.com/stubbornella/oocss/blob/master/core/grid/grids.css
+*/
+
+.line:after,.lastUnit:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
+.line{*zoom:1;}
+.unit{float:left;}
+.size1of1{float:none;}
+.size1of2{width:50%;}
+.size1of3{width:33.33333%;}
+.size2of3{width:66.66666%;}
+.size1of4{width:25%;}
+.size3of4{width:75%;}
+.size1of5{width:20%;}
+.size2of5{width:40%;}
+.size3of5{width:60%;}
+.size4of5{width:80%;}
+.lastUnit{display:table-cell;float:none;width:auto;*display:block;*zoom:1;_position:relative;_left:-3px;_margin-right:-3px;}
+
+
+
+
+/*
+==================================================
+
+4  LAYOUT
+
+==================================================
+*/
+
+
+/*
+--------------------------------------------------
+4.1  Default Page Structure
+-------------------------------------------------- */
+
+.page {
+	width: 920px;
+	margin: 0 auto;
+	padding: 15px;
+	margin-bottom: 100px;
+}
+.area {
+	width: 950px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+aside,
+.aside {
+	width: 266px;
+	float: right;
+}
+aside nav,
+.aside .nav {
+	margin: 15px;
+	position: relative;
+	z-index: 10;
+}
+section.main,
+.section.main {
+	width: 654px;
+	float: left;
+}
+.content {
+	padding: 15px;
+}
+header.masthead,
+.header {
+	padding-bottom: 0;
+}
+header.masthead h1,
+.header h1 {
+	margin-bottom: 0;
+}
+section aside,
+.section .aside {
+	width: auto;
+	float: none;
+}
+footer,
+.footer {
+	border-top: 1px solid #ddd;
+	margin: 15px;
+	padding: 15px 0 0;
+	clear: both;
+}
+.intro {
+	font-size: 1.5em;
+	line-height: 1.4em;
+}
+.example {
+	padding: 36px;
+	background: #f9f9f9;
+	color: #666;
+	border: 1px solid #eee;
+	margin-bottom: 36px;
+}
+
+
+/*
+--------------------------------------------------
+4.2  Clearing
+-------------------------------------------------- */
+
+/*
+http://www.positioniseverything.net/easyclearing.html
+*/
+
+#login-panel:after,
+.user form:after,
+.user ul:after,
+.user-nav:after,
+.nav:after,
+.status-menu li:after,
+.main-nav ul:after,
+.main:after,
+.tags:after,
+.container:after,
+.footer:after,
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+#login-panel,
+.user form,
+.user ul,
+.user-nav,
+.nav,
+.status-menu li,
+.main-nav ul,
+.main,
+.tags,
+.container,
+.footer,
+.clearfix {
+	zoom: 1;
+	display: block;
+}
+
+
+
+
+/*
+==================================================
+
+5  CONTENT
+
+==================================================
+*/
+
+
+/* User Bar
+-------------------------------------------------- */
+.user {
+	background: #eee;
+	position: relative;
+	z-index: 1;
+}
+.user ul {
+	margin: 0;
+}
+.user li {
+	display: inline;
+	float: left;
+	margin-right: 0;
+	margin-left: 8px;
+	list-style: none;
+}
+
+
+/* Form List Items
+-------------------------------------------------- */
+form ul li {
+	list-style: none;
+	margin-left: 0;
+}
+
+
+/* User Navigation
+-------------------------------------------------- */
+.user-nav {
+	width: 950px;
+	margin: 0 auto;
+}
+.user-nav ul {
+	float: right;
+	padding: 6px 18px;
+	font-size: .9em;
+}
+
+
+/* Login Panel
+-------------------------------------------------- */
+#login-panel {
+	width: 950px;
+	margin: 0 auto;
+}
+#login-panel fieldset {
+	margin: 0;
+}
+#login-panel p {
+	margin: 0;
+}
+#member-login fieldset {
+	float: right;
+	padding: 6px 18px;
+	margin-bottom: 0;
+}
+#member-login li {
+	display: inline;
+	float: left;
+	margin-right: 0;
+	margin-left: 8px;
+}
+#member-login li a {
+	line-height: 1.8em;
+}
+#member-login li input[type="text"],
+#member-login li input[type="password"] {
+	width: 80px;
+	padding: 2px 3px;
+}
+
+#member-login p {
+	white-space: nowrap;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#member-login p .reset {
+	margin-left: 6px;
+}
+
+#member-login input.button {
+	display: inline;
+	margin-left: 0;
+	width: auto;
+}
+#failed-login {
+	float: right;
+	padding: 6px 18px;
+}
+
+
+/* OpenID Login
+-------------------------------------------------- */
+#openid-login {
+	float: left;
+}
+#openid-login fieldset {
+	margin-bottom: 0;
+	padding: 6px 18px;
+	width: 250px;
+}
+#openid-login p {
+	margin-bottom: 0;
+	padding-top: 3px;
+}
+#openid-login p strong {
+	display: none;
+}
+#openid-login .button {
+	float: left;
+	margin-right: 6px;
+}
+
+
+/*
+--------------------------------------------------
+5.1  Images
+-------------------------------------------------- */
+figure a {
+	display: block;
+	vertical-align: bottom;
+}
+figcaption {
+	padding: 1em 1.5em;
+	background: #666;
+	color: #fff;
+	margin-bottom: 36px;
+}
+.image-a {
+	float: left;
+	margin-right: 18px;
+	margin-bottom: 12px;
+}
+.image-b {
+	float: right;
+	margin-left: 18px;
+	margin-bottom: 12px;
+}
+.image-c {
+	display: block;
+	margin: 18px auto;
+}
+.normalize {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*
+--------------------------------------------------
+5.2  Navigation
+-------------------------------------------------- */
+
+
+/* 5.2.1  Horizontal Navigation
+-------------------------------------------------- */
+/*
+.nav {
+	white-space: nowrap;
+	list-style: none;
+	margin-bottom: 0;
+}
+.nav li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+.nav ul {
+	display: none;
+	position: absolute;
+	margin: 0;
+	padding-left: 0;
+	text-transform: none;
+	line-height: 2.5;
+}
+.nav a {
+	display: block;
+	padding: .7em 1em;
+	text-decoration: none;
+}
+*/
+
+
+/* 5.2.2  Vertical Subnavigation
+-------------------------------------------------- */
+/*
+.nav li:hover ul {
+	display: block;
+}
+.nav li ul li {
+	clear: both;
+}
+.nav li ul li a {
+	padding: 0 1em;
+}
+*/
+
+
+/* 5.2.3	Main Navigation Extension
+-------------------------------------------------- */
+.main-nav {
+	padding-left: 18px;
+}
+
+
+/*
+--------------------------------------------------
+5.3  Menus
+-------------------------------------------------- */
+
+
+/* 5.3.1  Menus and Lists
+-------------------------------------------------- */
+.list li,
+.menu li {
+	margin-left: 0;
+	list-style-type: none;
+}
+
+
+/* 5.3.2  Main Menu
+-------------------------------------------------- */
+aside nav h3,
+aside nav h4,
+.aside .nav h3,
+.aside .nav h4 {
+	margin-top: .8em;
+	margin-bottom: .5em;
+}
+aside nav h5,
+aside nav h6,
+.aside .nav h5,
+.aside .nav h6 {
+	margin-top: .4em;
+	margin-bottom: 0;
+}
+aside nav p,
+.aside .nav p {
+	margin-bottom: .5em;
+}
+
+
+/* 5.3.3  List Menu
+-------------------------------------------------- */
+.list-menu {
+	margin-top: 4px;
+	margin-bottom: 18px;
+	border-bottom: 1px solid #eee;
+}
+.list-menu li {
+	margin-left: 0;
+	border-top: 1px solid #eee;
+}
+.list-menu li a {
+	padding: 0 9px;
+	display: block;
+}
+
+.list-menu-meta li {
+	padding: 0 9px;
+}
+.list-menu-meta li a {
+	padding: 0;
+	display: inline;
+}
+
+
+/* 5.3.4  Main Navigation
+-------------------------------------------------- */
+.header {
+	position: relative;
+}
+.main-nav {
+	padding: 0;
+	position: relative;
+}
+.main-nav ul {
+	margin-bottom: 0;
+}
+.main-nav ul {
+	margin-bottom: 0;
+}
+.main-nav ul li {
+	float: left;
+}
+.main-nav ul li a {
+	display: block;
+	padding: .5em 1em;
+}
+.main-nav ul li.current a,
+.main-nav ul li.current a:hover {
+	cursor: default;
+}
+
+
+/* 5.3.5  Status Menu
+-------------------------------------------------- */
+.status-menu {
+	margin-top: 4px;
+	margin-bottom: 18px;
+	border-bottom: 1px solid #eee;
+}
+.status-menu li {
+	margin-left: 0;
+	border-top: 1px solid #eee;
+}
+.status-menu li p {
+	padding: 6px 0;
+	margin-bottom: 0;
+}
+.in-progress p:hover,
+.preliminary p:hover,
+.previously-reviewed p:hover,
+.none p:hover {background-color: #eee}
+.none p:hover {background-color: #eee}
+.pending p:hover {background-color: #e1ffff}
+.approved p:hover {background-color: #e5ffa6}
+.changes p:hover {background-color: #fffeba}
+.rejected p:hover {background-color: #ffe4e2}
+
+.resource a {
+	padding: 0 9px 0 36px;
+	float: left;
+	background: url(../img/led/led.png) no-repeat 10px 1px;
+	width: 200px;
+	min-height: 18px;
+}
+.resource a {
+	color: #000;
+}
+.resource a:hover {
+	color: #2a8cc8;
+}
+.pending .resource a {background-position: 10px -39px}
+.approved .resource a {background-position: 10px -79px}
+.changes .resource a {background-position: 10px -119px}
+.rejected .resource a {background-position: 10px -159px}
+
+.status-menu .date {
+	float: left;
+	width: 112px;
+	margin-left: 36px;
+}
+
+.status {
+	color: #ccc;
+	margin-left: 36px;
+	white-space: nowrap;
+}
+.pending .status {color: #1b75bb}
+.approved .status {color: #3f8b05}
+.changes .status {color: #e4733d}
+.rejected .status {color: #b52835}
+
+.status-menu .separator {
+	display: none;
+}
+
+.status-menu li li p {
+	padding: 3px 0;
+}
+.status-menu li.pending ul li.none p {
+	background-color: transparent;
+}
+.status-menu li.pending ul li.none .status {
+	background-color: transparent;
+}
+.status-menu li li .resource a {
+	padding: 0 9px 0 54px;
+	width: 182px;
+	background: url(../img/led/led_small.png) no-repeat 36px 4px;
+}
+.status-menu li li.pending .resource a {background-position: 36px -36px}
+.status-menu li li.approved .resource a {background-position: 36px -76px}
+.status-menu li li.changes .resource a {background-position: 36px -116px}
+.status-menu li li.rejected .resource a {background-position: 36px -156px}
+
+
+/*
+--------------------------------------------------
+5.4  Table of Contents
+-------------------------------------------------- */
+#toc li.h3 {
+	padding-left: 15px;
+}
+#toc li.h4 {
+	padding-left: 30px;
+}
+#toc li.h5 {
+	padding-left: 45px;
+}
+#content h2,
+#content h3,
+#content h4,
+#content h5 {
+	position: relative;
+}
+.anchor-link {
+	background: url(../img/toc/anchor_link.png) no-repeat left center;
+	font-size: 0;
+	overflow: hidden;
+	position: absolute;
+	left: -25px;
+	top: 0;
+	width: 16px;
+	height: 100%;
+	text-decoration: none;
+	text-indent: -9999em;
+	text-shadow: none;
+}
+.anchor-link:hover {
+	background-position: -16px center;
+}
+
+
+/*
+--------------------------------------------------
+5.5  Swatches
+-------------------------------------------------- */
+.swatches:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.swatches {
+	zoom: 1;
+	display: block;
+}
+
+.swatch {
+	float: left;
+	text-align: center;
+	margin-left: 0;
+	margin-right: 6px;
+	margin-bottom: 12px;
+}
+.swatch a {
+	display: block;
+	border: 1px solid #eee;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ddd;
+	background: #f9f9f9;
+	color: #333;
+}
+.swatch span {
+	display: block;
+	width: 66px;
+	height: 66px;
+	text-indent: -9999em;
+}
+.swatch strong {
+	display: block;
+	padding: 3px 0;
+	font-weight: normal;
+}
+
+
+/*
+--------------------------------------------------
+5.6  OOCSS Modules
+-------------------------------------------------- */
+
+/*
+https://github.com/stubbornella/oocss/blob/master/core/module/mod.css
+*/
+
+/* 5.6.1  Module Classes
+-------------------------------------------------- */
+.mod {
+	margin: 15px;
+}
+.hd,
+.bd,
+.ft {
+	overflow: hidden;
+	_overflow: visible;
+	_zoom:1;
+}
+
+
+/* 5.6.2  Notice Module
+-------------------------------------------------- */
+.mod-notice {
+	background: #f9f9f9;
+	border: 1px solid #eee;
+	margin: 0 0 24px 0;
+	padding: 12px 12px 0 12px;
+}
+.mod-notice .hd,
+.mod-notice .bd {
+	padding: 6px 6px 0 6px;
+}
+
+
+/*
+--------------------------------------------------
+5.7  Forms
+-------------------------------------------------- */
+
+
+/* 5.7.1  Resources Form
+-------------------------------------------------- */
+form.resources div {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+form.resources label {
+	display: block;
+}
+form.resources input[type="text"] {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+}
+form.resources select {
+	width: 100%;
+}
+form.resources textarea {
+	-webkit-box-sizing: border-box;
+	width: 100%;
+}
+form.resources label {
+	position: relative;	
+}
+form.resources label i {
+	color: #aaa;
+	font-style: normal;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+ul.tags {
+	margin-top: 6px;
+	margin-bottom: 18px;
+}
+ul.tags:after {
+	clear: left;
+}
+ul.tags li {
+	color: #aaa;
+	font-size: .9em;
+	float: left;
+	margin-right: .8em;
+	cursor: pointer;
+}
+ul.tags li:hover {
+	color: #666;
+}
+.validation-messages li {
+	list-style: disc;
+	margin-left: 30px;
+}
+p.success {
+	color: green;
+}
+p.error {
+	color: red;
+}
+.error .message {
+	color: red;
+}
+.required abbr {
+	color: red;
+}
+.resource-meta {
+	color: #999;
+	padding-top: .5em;
+	border-top: 1px dotted #ccc;
+}
+label span,
+div.label span {
+	display: block;
+	margin: 2px 0 1.75em;
+	border: 1px solid #e4e4de;
+	padding: 12px;
+	background-color: #f5f5f3;
+	text-align: center;
+}
+.file input {
+	margin: -3px 0;
+	font: inherit;
+}
+.file span {
+	padding-right: 7.5em;
+	overflow: hidden;
+	text-align: left;
+}
+.file a {
+	float: left;
+}
+.file em {
+	float: right;
+	margin-right: -7.5em;
+	width: 7.5em;
+	color: #998;
+	text-decoration: underline;
+	font-style: normal;
+	cursor: pointer;
+}
+.file em:hover {
+	color: #d43;
+}
+ul.tags li {
+	list-style: none;
+	margin: 0 3px 3px 0;
+	font-size: 1em;
+}
+ul.tags li a {
+	float: left;
+	padding: .2em .7em;
+	background: #eee;
+}
+ul.tags li a.current,
+ul.tags li a:hover {
+	color: #fff;
+	background: #2a8cc8;
+}
+.tags-links {
+	margin-bottom: .5em;
+}
+.excerpts {
+	border-bottom: 1px dotted #ddd;
+	margin-bottom: 3em;
+}
+article.excerpt {
+	padding-top: 1em;
+	border-top: 1px dotted #ddd;
+}
+p.description {
+	margin-bottom: .5em;
+}
+article.excerpt .resource-meta {
+	padding-top: 0;
+	border-top: 0;
+}
+
+
+/*
+--------------------------------------------------
+5.8  System Messages
+-------------------------------------------------- */
+
+
+/* layout
+----------------------------------------------- */
+#system-messages {
+	margin-bottom: 0;
+}
+#system-messages ul {
+	margin: 0;
+}
+
+#system-messages div,
+#system-messages p,
+#system-messages li {
+	padding:.5em 1em .5em 30px;
+	margin-bottom: 1px;
+}
+#system-messages li {
+	margin-left: 0;
+	list-style: none;
+}
+
+
+/* color and icons
+----------------------------------------------- */
+#system-messages div,
+#system-messages p,
+#system-messages li {
+	background-repeat: no-repeat;
+	background-position: 8px 6px;
+}
+#system-messages .notice {
+	background-color: #b8d2df;
+	background-image: url("../img/status/information.png");
+}
+#system-messages .success {
+	background-color: #ceef9b;
+	background-image: url("../img/status/tick.png");
+}
+#system-messages .pending {
+	background-color: #efe38f;
+	background-image: url("../img/status/lock.png");
+}
+#system-messages .alert {
+	background-color: #efcb92;
+	background-image: url("../img/status/error.png");
+}
+#system-messages .error {
+	background-color: #f2b3ab;
+	background-image: url("../img/status/cross.png");
+}
+
+
+/*
+--------------------------------------------------
+5.9  Files
+-------------------------------------------------- */
+
+
+/* lists of files
+----------------------------------------------- */
+ul.files li {
+  margin-left: 36px;
+  text-indent: -22px;
+  list-style: none;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+ul.files li a {
+  line-height: 16px;
+}
+
+
+/* file types
+----------------------------------------------- */
+a.file {
+  background: transparent url(../img/files/file.gif) 0 0 no-repeat;
+  padding: 3px 0 3px 22px;
+  line-height: 20px;
+}
+a.doc {background-image: url(../img/files/doc.gif)}
+a.img {background-image: url(../img/files/img.gif)}
+a.pdf {background-image: url(../img/files/pdf.gif)}
+a.ppt {background-image: url(../img/files/ppt.gif)}
+a.txt {background-image: url(../img/files/txt.gif)}
+a.zip {background-image: url(../img/files/zip.gif)}
+
+a.ext {
+  padding: 3px 0 3px 22px;
+  line-height: 20px;
+  background: transparent url("../img/icons/forward.png") 4px 1px no-repeat;
+}
+
+
+/*
+--------------------------------------------------
+5.10  Site Information
+-------------------------------------------------- */
+h5.site {
+	margin-bottom: 0.2em;
+}
+.information {
+	text-align: left;
+	margin: 0;
+}
+.information li {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0 1em 0 0;
+}
+.information li.site {
+	float: none;
+	padding: 0;
+}
+.information li.credit {
+	float: right;
+	padding-right: 0;
+}
+
+
+
+
+/*
+==================================================
+
+6  COLORS
+
+==================================================
+*/
+
+
+/*
+--------------------------------------------------
+6.1  Anchors
+-------------------------------------------------- */
+a {
+	color: #2A8CC8;
+}
+a:hover,
+a.current,
+a.current:hover {
+	color: #000;
+}
+
+
+/*
+--------------------------------------------------
+6.2  Input Buttons
+-------------------------------------------------- */
+input.button {
+	background-color: #2A8CC8;
+	color: #fff;
+}
+input.button:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+
+/*
+--------------------------------------------------
+6.3  Page
+-------------------------------------------------- */
+
+
+/* Body
+-------------------------------------------------- */
+body {
+	background: #bbb;
+}
+
+
+/* User Bar
+-------------------------------------------------- */
+.user {
+	background: #444;
+	background: -moz-linear-gradient(
+		top,
+		#444 0%,
+		#000 100%
+	);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#444),
+		to(#000)
+	);
+	color: #999;
+}
+
+.user a {
+	color: #fff;
+}
+.user a:hover {
+	color: #2A8CC8;
+}
+
+
+/* Header
+-------------------------------------------------- */
+header,
+.header {
+/* light grey gradation */
+	background: #ccc;
+	background: -moz-linear-gradient(
+		top,
+		#fff 0%,
+		#bbb 100%
+	);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#fff),
+		to(#bbb)
+	);
+}
+
+
+/* Main Navigation
+-------------------------------------------------- */
+.main-nav ul {
+	background: transparent;
+}
+
+.main-nav ul li {
+	margin-right: 2px;
+	text-transform: uppercase;
+}
+
+.main-nav ul li a {
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright: 7px;
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background: #ccc;
+	background: -moz-linear-gradient(
+		top,
+		#fff 0%,
+		#ccc 100%
+	);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#fff),
+		to(#ccc)
+	);
+	color: #999;
+}
+
+.main-nav ul li a:hover {
+	background: #ddd;
+	background: -moz-linear-gradient(
+		top,
+		#fff 0%,
+		#eee 100%
+	);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#fff),
+		to(#eee)
+	);
+	color: #666;
+}
+
+.main-nav ul li.current a,
+.main-nav ul li a:active {
+	background: #fff;
+	color: #000;
+}
+
+
+/* Page
+-------------------------------------------------- */
+.page {
+	background: #fff;
+	-moz-box-shadow: 0 3px 6px #666;
+	-webkit-box-shadow: 0 3px 6px #666;
+	box-shadow: 0 3px 6px #666;
+}
+
+
+
+
+
+/*
+==================================================
+
+7  BRANDING
+
+==================================================
+*/
+
+
+/*
+--------------------------------------------------
+7.1  Logo
+-------------------------------------------------- */
+.logo {
+	padding: 15px 0 30px;
+}
+
+/*
+.logo a {
+	display: block;
+	width: 250px;
+	height: 80px;
+	margin-bottom: 15px;
+	text-indent: -9999em;
+	background-image: url(../img/brand/logo.png);
+}
+*/
+
+
+
+/*
+==================================================
+
+8  EFFECTS
+
+==================================================
+*/
+
+
+/*
+--------------------------------------------------
+8.1 Box Shadows
+-------------------------------------------------- */
+
+/*
+http://css3please.com/
+*/
+
+
+/* User Bar
+-------------------------------------------------- */
+.user {
+	-moz-box-shadow: 0px 2px 6px #666;
+	-webkit-box-shadow: 0px 2px 6px #666;
+	box-shadow: 0px 2px 6px #666;
+}
+
+
+/* Colour Palette
+-------------------------------------------------- */
+.swatch a,
+.box_shadow {
+	-moz-box-shadow: 0px 0px 4px #ccc; /* FF3.5+ */
+	-webkit-box-shadow: 0px 0px 4px #ccc; /* Saf3.0+, Chrome */
+	box-shadow: 0px 0px 4px #ccc; /* Opera 10.5, IE 9.0 */
+}
+.swatch a:hover {
+	background-color: #fff;
+	-moz-box-shadow: 0px 0px 4px #2A8CC8; /* FF3.5+ */
+	-webkit-box-shadow: 0px 0px 4px #2A8CC8; /* Saf3.0+, Chrome */
+	box-shadow: 0px 0px 4px #2A8CC8; /* Opera 10.5, IE 9.0 */
+}
+
+
+/*
+--------------------------------------------------
+8.2 Rounded Corners
+-------------------------------------------------- */
+input.button {
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+}
+
+
+/*
+--------------------------------------------------
+8.2 Syntax Highlighter Overrides
+-------------------------------------------------- */
+html body div.syntaxhighlighter {
+	font-size: 11px !important;
+	padding: 8px 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 24px !important;
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+html body div.syntaxhighlighter * {
+	line-height: 1.5 !important;
+}
+.code-block-heading {
+	margin-bottom: 0;
+	padding: .5em .8em;
+	background: #D9DDE2;
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright: 7px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+
+
+
+
+/*
+==================================================
+
+9  MEDIA QUERIES
+
+==================================================
+*/
+
+/*
+--------------------------------------------------
+9.1  Large Screens (over 960 pixels wide)
+-------------------------------------------------- */
+
+@media (min-width: 961px) {
+
+}
+
+/*
+--------------------------------------------------
+9.2  Medium Screens (768 pixels wide)
+-------------------------------------------------- */
+
+@media (max-width: 960px) and (min-width: 768px) {
+
+	#login-panel,
+	.user-nav {
+		width: 648px;
+	}
+
+	#login-panel fieldset,
+	.user-nav ul {
+		padding: 6px 0;
+	}
+
+	#failed-login {
+		padding: 0;
+	}
+
+	.page {
+		width: 678px;
+	}
+
+	.area {
+		width: 708px;
+	}
+
+	aside,
+	.aside {
+		width: 240px;
+		margin-left: 0;
+		background: #fff;
+		float: none;
+	}
+
+	section.main,
+	.section.main {
+		width: auto;
+		float: none;
+	}
+
+	section section.separate,
+	.section .section.separate {
+		clear: both;
+	}
+
+	.line {
+		clear: both;
+	}
+
+	.main-nav ul {
+		right: 0;
+	}
+
+	form.resources {
+		clear: both;
+	}
+}
+
+
+/*
+--------------------------------------------------
+9.3  Small Screens (480 pixels wide)
+-------------------------------------------------- */
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+
+	#login-panel,
+	.user-nav {
+		width: auto;
+	}
+
+	#login-panel fieldset {
+		float: none;
+		padding: 6px 0;
+	}
+
+	.user-nav ul {
+		float: none;
+		padding: 6px 0;
+		margin-left: 30px;
+	}
+
+	#login-panel li {
+		margin-right: 8px;
+		margin-left: 0;
+	}
+
+	#openid-login {
+		float: none;
+	}
+
+	#login-panel .button {
+		margin-top: 0;
+	}
+
+	#failed-login {
+		padding: 0;
+		float: none;
+	}
+
+	.page {
+		width: auto;
+	}
+
+	.area {
+		padding: 15px 30px 0;
+		width: auto;
+	}
+
+	aside,
+	.aside {
+		width: auto;
+		float: none;
+	}
+
+	section.main,
+	.section.main {
+		float: none;
+		width: auto;
+	}
+
+	header.masthead,
+	.header.masthead {
+		padding: 0;
+	}
+
+	.main-nav ul {
+		position: static;
+		top: 0;
+		right: 0;
+		margin-bottom: 12px;
+		padding: 0;
+	}
+
+	.main-nav ul li {
+		margin: 0 6px 8px 0;
+	}
+
+	.main-nav ul li a {
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+	}
+
+	.main-nav ul li {
+		float:left;
+		width:48.5%;
+		margin-bottom:0.625em;
+		margin-right:1.5%;
+	}
+
+	.main-nav ul li:nth-child(even) {
+		margin-right:0%;
+		margin-left:1.5%;
+	}
+
+	figure img,
+	.figure img {
+		width: 100%;
+	}
+
+	.example {
+		padding: 24px;
+	}
+
+	.unit {
+		float: none;
+		width: auto;
+	}
+
+	.status-menu li li .status {
+		width: auto;
+		margin-left: 54px;
+	}
+
+}
+
+
+/*
+--------------------------------------------------
+9.3  Small and Narrow Screens (480 pixels wide)
+-------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+
+	body {
+		background: #999;
+	}
+
+	.area {
+		background: #eee;
+		background: -moz-linear-gradient(
+			top,
+			#fff 0%,
+			#ccc 100%
+		);
+		background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(#fff),
+			to(#ccc)
+		);
+	}
+
+	.main-nav ul li a {
+		background: #999;
+		background: -moz-linear-gradient(
+			top,
+			#999 0%,
+			#333 100%
+		);
+		background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(#999),
+			to(#333)
+		);
+		color: #fff;
+	}
+	.main-nav ul li a:hover {
+		background: #777;
+		background: -moz-linear-gradient(
+			top,
+			#777 0%,
+			#111 100%
+		);
+		background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(#777),
+			to(#111)
+		);
+		color: #fff;
+	}
+	.main-nav ul li a:active {
+		background: #666;
+		background: -moz-linear-gradient(
+			top,
+			#666 0%,
+			#000 100%
+		);
+		background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(#666),
+			to(#000)
+		);
+	}
+	.main-nav ul li.current a,
+	.main-nav ul li.current a:hover {
+		background: #0783f7;
+		background: -moz-linear-gradient(
+			top,
+			#0783f7 0%,
+			#0b2c71 100%
+		);
+		background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(#0783f7),
+			to(#0b2c71)
+		);
+		cursor: default;
+		color: #fff;
+	}
+	.main-nav ul li:first-child a,
+	.main-nav ul li:first-child a:hover {
+	}
+	
+	.user li {
+		margin-right: 8px;
+		margin-left: 0;
+	}
+
+	.page {
+		margin-bottom: 0;
+	}
+
+}
+
+
+/*
+--------------------------------------------------
+9.4  Narrow Screens (320 pixels wide)
+-------------------------------------------------- */
+
+@media only screen and (max-width: 479px) {
+
+	#login-panel,
+	.user-nav {
+		width: auto;
+	}
+
+	#login-panel fieldset {
+		padding: 6px 0;
+		float: none;
+	}
+
+	.user-nav ul {
+		padding: 6px 0;
+		margin-left: 30px;
+		float: none;
+	}
+
+	#login-panel .button {
+		margin-top: 6px;
+	}
+
+	#login-panel li {
+		margin-right: 8px;
+		margin-left: 0;
+	}
+
+	#login-panel p {
+		white-space: normal;
+	}
+
+	#login-panel p .reset {
+		display: block;
+		padding: 6px 0;
+	}
+
+	#login-panel p .button {
+		margin-top: 0;
+	}
+
+	#openid-login {
+		float: none;
+	}
+
+	#login-panel #openid-login .button {
+		margin-top: 0;
+	}
+
+	#failed-login {
+		padding: 0;
+		float: none;
+	}
+
+	.page {
+		width: auto;
+	}
+
+	.area {
+		padding: 15px 30px 0;
+		width: auto;
+	}
+
+	aside,
+	.aside {
+		width: auto;
+		float: none;
+	}
+
+	section.main,
+	.section.main {
+		float: none;
+		width: auto;
+	}
+
+	.main-nav ul {
+		position: static;
+		top: 0;
+		right: 0;
+		margin-bottom: 12px;
+		padding: 0;
+	}
+
+	.main-nav ul li {
+		margin: 0 0 8px 0;
+		width: 100%;
+	}
+
+	.main-nav ul li a {
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+		border-radius: 7px;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	table {
+		font-size: .9em;
+	}
+
+	header.masthead,
+	.header.masthead {
+		padding: 0;
+	}
+
+	.example {
+		padding: 18px;
+	}
+
+	.unit {
+		float: none;
+		width: auto;
+	}
+
+	.column {
+		float: none;
+		width: auto;
+	}
+
+	.status {
+		clear: both;
+		display: block;
+	}
+
+	.status-menu li li .date {
+		width: auto;
+		margin-left: 54px;
+	}
+	.status-menu li li .status {
+		width: auto;
+		margin-left: 54px;
+	}
+
+}
+
+

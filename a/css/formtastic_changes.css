@@ -1,0 +1,316 @@
+/*
+-----------------------------------------------
+formtastic_changes.css
+----------------------------------------------- */
+
+
+
+
+/* style forms
+----------------------------------------------- */
+form.formtastic {
+  margin: 2em 0 0;
+  padding-bottom: 2em;
+}
+
+form.formtastic ol li,
+form.formtastic ul li,
+form.formtastic ol li ol li,
+form.formtastic ol li ul li,
+form.formtastic ul li ol li,
+form.formtastic ul li ul li {
+  list-style: none;
+}
+
+form.formtastic fieldset ol li {
+  margin-bottom:.5em;
+}
+
+form.formtastic fieldset ol li.select select,
+form.formtastic fieldset ol li.string input,
+form.formtastic fieldset ol li.password input,
+form.formtastic fieldset ol li.numeric input,
+form.formtastic fieldset ol li.text textarea {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  width: 60%;
+}
+
+form.formtastic fieldset ol li label {
+  float: left;
+  margin-right: 2%;
+  text-align: right;
+  width: 31%;
+  font-weight: bold;
+  display: inline;
+}
+
+form.formtastic fieldset ol li.boolean label {
+  width: auto;
+  padding: 0;
+  margin-left: 33%;
+  font-weight: normal;
+  display: inline;
+}
+
+form.formtastic fieldset li.string input,
+form.formtastic fieldset li.password input {
+  color: #666;
+  margin: 0;
+}
+
+form.formtastic fieldset li.string input:focus,
+form.formtastic fieldset li.password input:focus {
+  background-color: #cdf;
+  color: #000;
+}
+
+form.formtastic fieldset ol li fieldset legend {
+  width: 31%;
+  color: #666;
+  white-space: normal;
+}
+
+form.formtastic fieldset ol li fieldset legend.label label {
+  position: static;
+  width: 100%;
+  margin: 0;
+}
+
+/* check boxes & radio buttons
+----------------------------------------------- */
+form.formtastic fieldset ol li.check_boxes fieldset legend,
+form.formtastic fieldset ol li.radio fieldset legend {
+  float: left;
+  text-align: right;
+  font-weight: bold;
+}
+
+form.formtastic fieldset ol li.check_boxes fieldset ol,
+form.formtastic fieldset ol li.radio fieldset ol {
+  display: block;
+  width: 60%;
+  margin-left: 33%;
+}
+
+form.formtastic fieldset ol li.check_boxes fieldset ol li,
+form.formtastic fieldset ol li.radio fieldset ol li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: .5em;
+}
+
+form.formtastic fieldset ol li.check_boxes fieldset ol li label,
+form.formtastic fieldset ol li.radio fieldset ol li label {
+  float: none;
+}
+
+/* date & time
+----------------------------------------------- */
+form.formtastic fieldset ol li.date fieldset legend {
+  float: left;
+}
+
+form.formtastic fieldset ol li.date fieldset ol {
+  display: block;
+  width: 60%;
+  margin-left: 33%;
+}
+
+form.formtastic fieldset ol li.date fieldset ol li,
+form.formtastic fieldset ol li.time fieldset ol li,
+form.formtastic fieldset ol li.datetime fieldset ol li {
+  float: left;
+  width: auto;
+  margin: 0 .3em 0 0;
+  padding: 0;
+}
+
+form.formtastic fieldset ol li.date fieldset ol li label,
+form.formtastic fieldset ol li.time fieldset ol li label,
+form.formtastic fieldset ol li.datetime fieldset ol li label {
+  display: none;
+}
+
+form.formtastic fieldset ol li.date fieldset ol li label input, 
+form.formtastic fieldset ol li.time fieldset ol li label input, 
+form.formtastic fieldset ol li.datetime fieldset ol li label input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+form.formtastic fieldset.buttons,
+form.formtastic fieldset ol li fieldset ol {
+  margin-left: 33%;
+  padding: 0;
+  width: 60%;
+  display: inline;
+}
+
+form.formtastic input[type="submit"] {
+  margin-left: 33%;
+}
+form.formtastic fieldset ol li fieldset legend span {
+  position: static;
+  white-space: normal;
+}
+form.formtastic fieldset.buttons input[type="submit"] {
+  margin-left: 0;
+}
+
+form.formtastic fieldset ol li p.inline-hints {
+  color:#666;
+  margin:0.5em 0 0 33%;
+  padding-top:0.4em;
+}
+form.formtastic fieldset ol li p.inline-errors {
+  margin:0.5em 0 0 33%;
+}
+form.formtastic ul.errors {
+        margin:0.5em 0 20px 33%;
+        color: #c00;
+}
+.errorExplanation {
+  margin-bottom: 2em;
+}
+.errorExplanation ul li {
+  color: #c00;
+}
+.required abbr {
+  color: #c00;
+}
+
+
+/* simple forms
+----------------------------------------------- */
+form.simple-form fieldset ol li {
+  margin-bottom:1.5em;
+}
+form.simple-form fieldset ol li label {
+  line-height: 2em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 1.2em;
+}
+
+form.simple-form fieldset li.string input,
+form.simple-form fieldset li.password input {
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+form.simple-form fieldset select {
+  margin: .5em 0;
+}
+
+
+/* fix a clash with event classes
+----------------------------------------------- */
+form.event {
+  border-bottom: none;
+}
+
+
+/* form items
+----------------------------------------------- */
+form.form-items fieldset ol {
+  border-top: 1px solid #ccc;
+}
+
+form.form-items fieldset ol ol {
+  border: 0;
+}
+
+form.form-items fieldset ol ol li {
+  border: 0;
+}
+
+form.form-items fieldset ol li {
+  padding: .7em 0 1em;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+form.form-items fieldset.buttons ol li {
+  border-bottom: none;
+}
+
+form.form-items fieldset ol li.check_boxes .boolean {
+  padding: 0;
+  border-top: none; 
+}
+
+form.form-items fieldset ol li.date input,
+form.form-items fieldset ol li.file input,
+form.form-items fieldset ol li.numeric input,
+form.form-items fieldset ol li.password input,
+form.form-items fieldset ol li.select select,
+form.form-items fieldset ol li.string input,
+form.form-items fieldset ol li.text textarea,
+form.form-items fieldset ol li fieldset ol {
+  width: 67%;
+  margin-top: .3em;
+}
+form.form-items fieldset ol li.boolean label {
+  text-align: left;
+  margin: 0;
+  font-weight: bold;
+  float: left;
+  width: 33%;
+}
+form.form-items fieldset ol li label {
+  text-align: left;
+}
+form.form-items fieldset legend {
+  font-weight: bold;
+}
+form.form-items fieldset ol li.check_boxes label,
+form.form-items fieldset ol li.radio label {
+  font-weight: normal;
+}
+form.form-items fieldset ol li.check_boxes fieldset legend,
+form.form-items fieldset ol li.radio fieldset legend {
+  text-align: left;
+}
+
+form.form-items fieldset ol li.check_boxes legend label,
+form.form-items fieldset ol li.radio legend label {
+  font-weight: bold;
+}
+form.form-items fieldset ol li.stars label {
+  display: inline;
+  font-weight: bold;
+}
+form.form-items fieldset.buttons {
+  width: 67%;
+}
+form.form-items fieldset.buttons ol {
+  border: 0;
+}
+form.form-items .item-content h4,
+form.form-items .item-content p {
+  margin-bottom: 1em;
+}
+form.form-items input[type="submit"] {
+  margin-top: 1em;
+}
+
+
+/* form sets
+----------------------------------------------- */
+form.form-sets fieldset.inputs {
+  background: #ddd;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+form.form-sets fieldset.inputs legend.set {
+  background: #aaa;
+  padding: 8px 12px;
+}
+form.form-sets fieldset.inputs legend.fields-heading {
+  background: #aaa;
+  width: 100%;
+  padding: 8px 12px;
+  margin: 0 0 0 -12px;
+}
