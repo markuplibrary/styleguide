@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms | Markup Library</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Domain7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../a/css/formtastic.css" />
+    <link rel="stylesheet" href="../../a/css/forms.css" />
+    <link rel="stylesheet" href="../../a/css/main.css" />
+  </head>
+  <body id="dashboard-page">
+    <div class="user">
+      <div class="user-nav">
+        <ul>
+          <li>Fork on <a href="http://github.com/bauhouse/styleguide">GitHub</a></li>
+          <!-- li><a href="#">Download</a> the ZIP file</li -->
+        </ul>
+      </div>
+    </div>
+    <div class="header masthead">
+      <div class="area">
+        <h1 class="logo">
+          <a href="../../">Markup Library</a>
+        </h1>
+        <div class="nav main-nav">
+          <ul class="menu">
+            <li id="nav-dashboard">
+              <a href="../../">Typography</a>
+            </li>
+            <li id="nav-colour">
+              <a href="../../colour/">Colour</a>
+            </li>
+            <li id="nav-grids">
+              <a href="../../grids/">Grids</a>
+            </li>
+            <li id="nav-forms" class="current">
+              <a href="../../forms/">Forms</a>
+            </li>
+            <li id="nav-content">
+              <a href="../../content/">Content</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="container">
+        <div class="section main">
+          <div class="content">
+            <h1>Forms</h1>
+          </div>
+          <div class="content">
+            <h3>Flashes</h3>
+            <p class="intro">Flashes are used to display messages to the user based on responses to user actions.</p>
+          </div>
+        </div>
+        <div class="aside">
+          <div class="nav" id="news">
+            <h3>Forms</h3>
+            <ul class="menu list-menu">
+              <li><a href="../">Formtastic</a></li>
+              <li><a href="../form-items/">Formtastic: Form Items</a></li>
+              <li><a href="../default/">Formtastic: Default</a></li>
+              <li><a href="../simple/">Formtastic: Simple Forms</a></li>
+              <li><a href="../flashes/" class="current">Flashes</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="content">
+          <h4>Unordered List</h4>
+          <p>The styles have been created to allow the flexibility to use <code>div</code>, <code>p</code> or <code>li</code> elements inside any element with the id, <code>flashes</code>. The flash messages below use the following markup:</p>
+          <pre><code>&lt;ul id="flashes">
+  &lt;li class="notice">&lt;strong>Note&lt;/strong>:
+    This is an unordered list with five list items.&lt;/li>
+  &lt;li class="success">&lt;strong>Success&lt;/strong>:
+    You have successfully updated your profile.&lt;/li>
+  &lt;li class="pending">&lt;strong>Pending&lt;/strong>:
+    Thank you for submitting your review. Your review is pending approval.&lt;/li>
+  &lt;li class="alert">&lt;strong>Warning&lt;/strong>:
+    Not all features are available until account is verified.&lt;/li>
+  &lt;li class="error">&lt;strong>Error&lt;/strong>:
+    An error was encountered when submitting this form. Ensure you are using a valid email address.&lt;/li>
+&lt;/ul></code></pre>
+          <ul id="flashes">
+            <li class="notice"><strong>Note</strong>: This is an unordered list with five list items.</li>
+            <li class="success"><strong>Success</strong>: You have successfully updated your profile.</li>
+            <li class="pending"><strong>Pending</strong>: Thank you for submitting your review. Your review is pending approval.</li>
+            <li class="alert"><strong>Warning</strong>: Not all features are available until account is verified.</li>
+            <li class="error"><strong>Error</strong>: An error was encountered when submitting this form. Ensure you are using a valid email address.</li>
+          </ul>
+          <h4>Paragraph</h4>
+          <p>The following example uses the paragraph element. The flash message below uses the following markup:</p>
+          <pre><code>&lt;div id="flashes">
+  &lt;p class="notice">&lt;strong>Note&lt;/strong>:
+    This is a paragraph element inside a &lt;code>div&lt;/code>.&lt;/p>
+&lt;/div></code></pre>
+          <div id="flashes">
+            <p class="notice"><strong>Note</strong>: This is a paragraph element inside a <code>div</code>.</p>
+          </div>
+          <p>Use multiple paragraph elements with the <code>div</code> element.</p>
+          <pre><code>&lt;div id="flashes">
+  &lt;p class="notice">&lt;strong>Note&lt;/strong>: There are five paragraph elements inside this &lt;code>div&lt;/code>.&lt;/p>
+  &lt;p class="success">&lt;strong>Success&lt;/strong>: You have successfully updated your profile.&lt;/p>
+  &lt;p class="pending">&lt;strong>Pending&lt;/strong>: Thank you for submitting your review. Your review is pending approval.&lt;/p>
+  &lt;p class="alert">&lt;strong>Warning&lt;/strong>: Not all features are available until account is verified.&lt;/p>
+  &lt;p class="error">&lt;strong>Error&lt;/strong>: An error was encountered when submitting this form. Ensure you are using a valid email address.&lt;/p>
+&lt;/div></code></pre>
+          <div id="flashes">
+            <p class="notice"><strong>Note</strong>: There are five paragraph elements inside this <code>div</code>.</p>
+            <p class="success"><strong>Success</strong>: You have successfully updated your profile.</p>
+            <p class="pending"><strong>Pending</strong>: Thank you for submitting your review. Your review is pending approval.</p>
+            <p class="alert"><strong>Warning</strong>: Not all features are available until account is verified.</p>
+            <p class="error"><strong>Error</strong>: An error was encountered when submitting this form. Ensure you are using a valid email address.</p>
+          </div>
+          <h4>Divisions</h4>
+          <p>The following example uses the <code>div</code> element. The flash message below use the following markup:</p>
+          <div id="flashes">
+            <div class="notice"><strong>Note</strong>: This message is inside a <code>div</code> element.</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <h5 class="site"><a href="http://markuplibrary.org/">Markup Library</a></h5>
+        <ul class="information">
+          <li class="licence"><a href="http://creativecommons.org/publicdomain/zero/1.0/" title="Creative Commons Public Domain CC0 1.0 Universal">Licence</a></li>
+          <li class="github"><a href="http://github.com/bauhouse/styleguide" title="Fork on GitHub">GitHub</a></li>
+          <li class="credit"><a href="http://domain7.com/team/stephen-bau/" title="Stephen Bau, Lead Designer, Domain7">Credit</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
